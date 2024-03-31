@@ -1,0 +1,20 @@
+  <div class="modal fade" id="apiKeyModal" tabindex="-1" aria-labelledby="apiKeyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="apiKeyModalLabel">API Key Required</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>To use Dall-E-3 features, you need an OpenAI API key. Please enter your key below.</p>
+          <form id="apiKeyForm" action="/save-api-key" method="post">
+            <div class="mb-3">
+              <label for="apiKeyInput" class="form-label">OpenAI API Key</label>
+              <input type="text" class="form-control" id="apiKeyInput" name="apiKey" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Save API Key</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
